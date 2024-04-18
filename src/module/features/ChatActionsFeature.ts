@@ -93,6 +93,12 @@ export class ChatActionsFeature {
             await chatCard.updateMessage();
             this.triggerTotalChangedAnimation(messageId, rollIndex);
         }
+        
+        if (action === "undo") {
+            await chatCard.rolls[rollIndex].undo(userId);
+            await chatCard.updateMessage();
+            this.triggerTotalChangedAnimation(messageId, rollIndex);
+        }
     }
 
     static triggerTotalChangedAnimation(messageId: string, rollIndex: string, sync = true, disable = false) {
