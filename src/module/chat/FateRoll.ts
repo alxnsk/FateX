@@ -90,7 +90,7 @@ export class FateRoll extends FateRollDataModel {
         return this;
     }
 
-    undo(userId = "") {
+    undo() {
         if(this.history.length > 0){
             //There is actually some steps, that we can undo.
             const history = foundry.utils.deepClone(this.history);
