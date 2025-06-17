@@ -100,6 +100,23 @@ export class FateRoll extends FateRollDataModel {
         return this;
     }
 
+    undo() {
+        if(this.history.length > 0){
+            //There is actually some steps, that we can undo.
+            const history = foundry.utils.deepClone(this.history);
+
+            const lastStep = history.pop();
+
+            const mod = (lastStep.type === "increase") ? 2 : 0;
+
+            const curFace = (lastStep.type === "reroll") ? lastStep.previousRoll : this.faces;
+
+            this.updateSource({ bonus: this.bonus - mod, faces: curFace, history: history});
+        }
+
+        return this;
+    }
+
     private addHistoryEntry(userId: string, data) {
         const history = foundry.utils.deepClone(this.history);
         const user = userId ? game.users.get(userId) : game.user;
