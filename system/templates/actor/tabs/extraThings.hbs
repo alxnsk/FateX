@@ -1,0 +1,34 @@
+<section class="fatex-u-full-width">
+    <div class="fatex-u-padding-std fatex-item-grid">
+        {{#each extraThings as |extraThing extraThingIndex|}}
+            <div data-item-id="{{extraThing._id}}">
+                <header
+                    class="fatex-js-sortable fatex-headline fatex-headline--fixed-icon"
+                    data-item-id="{{extraThing._id}}"
+                >
+                    <h3 class="fatex-headline__text">{{extraThing.name}}</h3>
+
+                    <div class="fatex-actions fatex-actions--headline">
+                        <i class="fatex-js-item-sort fatex-actions__icon fa fa-sort"></i>
+                        <i class="fatex-js-extraThing-settings fatex-actions__icon fa fa-cog" data-item="{{extraThing._id}}"></i>
+                        <i class="fatex-js-extraThing-delete fatex-actions__icon fatex-u-delete fa fa-trash" data-item="{{extraThing._id}}"></i>
+                        <i class="fatex-js-send-to-chat fatex-actions__icon fatex-actions__icon--no-hide fa fa-comment" data-item="{{extraThing._id}}"></i>
+                        <i class="fatex-js-item-collapse fatex-actions__icon fatex-actions__icon--no-hide fa fa-chevron-up{{#if extraThing.system.collapsed}} fatex-actions__icon--reverse{{/if}}" data-item="{{extraThing._id}}"></i>
+                    </div>
+                </header>
+
+                {{#unless extraThing.system.collapsed}}
+                    {{#if extraThing.system.description}}
+                        <div class="fatex-item-description">
+                            {{{extraThing.system.description}}}
+                        </div>
+                    {{/if}}
+                {{/unless}}
+            </div>
+        {{/each}}
+
+        <div class="fatex-js-extraThing-add fatex-headline fatex-headline--center fatex-headline--helper">
+            <h3 class="fatex-headline__text">+</h3>
+        </div>
+    </div>
+</section>

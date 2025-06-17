@@ -19,7 +19,7 @@
         }
     },
     "Item": {
-        "types": ["stress", "aspect", "consequence", "skill", "stunt", "extra", "actorReference", "tokenReference"],
+        "types": ["stress", "aspect", "consequence", "skill", "stunt", "extra", "extraThing", "actorReference", "tokenReference"],
         "templates": {
             "base": {
                 "disabled": false,
@@ -65,6 +65,11 @@
             "collapsed": false
         },
         "extra": {
+            "templates": ["base", "subItem"],
+            "shortDescription": "",
+            "collapsed": false
+        },
+        "extraThing": {
             "templates": ["base", "subItem"],
             "shortDescription": "",
             "collapsed": false

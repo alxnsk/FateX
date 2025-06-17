@@ -38,6 +38,7 @@
             "Skills": "Навыки",
             "Stunts": "Трюки",
             "Extras": "Дополнения",
+            "ExtraThings": "Предметы",
             "Bio": "Биография",
             "Artwork": "Изображение",
             "StressTracks": "Счётчики стресса",
@@ -46,6 +47,7 @@
                 "Skills": "Навыки",
                 "Stunts": "Трюки",
                 "Extras": "Дополнения",
+                "ExtraThings": "Предметы",
                 "Bio": "Биография"
             },
             "Buttons": {
@@ -140,6 +142,15 @@
                 "ShortDescription": "Сокращенное Описание",
                 "ShortDescriptionHelp": "Сокращенное описание этого дополнения"
             },
+            "ExtraThing" : {
+                "Name": "Название Предмета",
+                "EditItem": "Редактировать Предмет",
+                "Description": "Описание",
+                "DescriptionHelp": "Полное описание этого предмета",
+                "ShortDescription": "Сокращенное Описание",
+                "ShortDescriptionHelp": "Сокращенное описание этого предмета"
+            },
+
             "Reference": {
                 "EditItem": "Редактировать Ссылку",
                 "Name": "Название Ссылки",

@@ -22,6 +22,7 @@ import { TemplatePreloader } from "./module/helper/TemplatePreloader";
 import { AspectSheet } from "./module/item/aspect/AspectSheet";
 import { ConsequenceSheet } from "./module/item/consequence/ConsequenceSheet";
 import { ExtraSheet } from "./module/item/extra/ExtraSheet";
+import { ExtraThingSheet } from "./module/item/extraThing/ExtraThingSheet";
 import { FateItem } from "./module/item/FateItem";
 import { SkillSheet } from "./module/item/skill/SkillSheet";
 import { StressSheet } from "./module/item/stress/StressSheet";
@@ -105,6 +106,11 @@ Hooks.once("init", async () => {
 
     Items.registerSheet("FateX", ExtraSheet, {
         types: ["extra"],
+        makeDefault: true,
+    });
+
+    Items.registerSheet("FateX", ExtraThingSheet, {
+        types: ["extraThing"],
         makeDefault: true,
     });
 

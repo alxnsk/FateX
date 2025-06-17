@@ -6,6 +6,7 @@ import { Sortable } from "./module/components/Sortable/Sortable";
 import { AspectItem } from "./module/item/aspect/AspectItem";
 import { ConsequenceItem } from "./module/item/consequence/ConsequenceItem";
 import { ExtraItem } from "./module/item/extra/ExtraItem";
+import { ExtraThingItem } from "./module/item/extraThing/ExtraThingItem";
 import { SkillItem } from "./module/item/skill/SkillItem";
 import { StressItem } from "./module/item/stress/StressItem";
 import { StuntItem } from "./module/item/stunt/StuntItem";
@@ -54,6 +55,7 @@ export const FateX: FatexConfig = {
         skill: SkillItem,
         stunt: StuntItem,
         extra: ExtraItem,
+        extraThing: ExtraThingItem,
         tokenRefernce: TokenReferenceItem,
         actorReference: ActorReferenceItem,
     },

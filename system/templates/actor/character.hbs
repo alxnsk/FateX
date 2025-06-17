@@ -44,6 +44,11 @@
                         <a class="fatex-tabs-navigation__item" data-tab="extras">
                             {{~localize "FAx.Sheet.Tabs.Extras"~}}
                         </a>
+
+                        <a class="fatex-tabs-navigation__item" data-tab="extraThings">
+                            {{~localize "FAx.Sheet.Tabs.ExtraThings"~}}
+                        </a>
+
                         <a class="fatex-tabs-navigation__item" data-tab="bio">
                             {{~localize "FAx.Sheet.Tabs.Bio"~}}
                         </a>
@@ -60,6 +65,12 @@
                         <div class="fatex-tab-content tab" data-tab="extras">
                             {{> "systems/fatex/templates/actor/tabs/extras.hbs"}}
                         </div>
+
+                        {{!--ExtraThings--}}
+                        <div class="fatex-tab-content tab" data-tab="extraThings">
+                            {{> "systems/fatex/templates/actor/tabs/extraThings.hbs"}}
+                        </div>
+
 
                         {{!--Bio--}}
                         <div class="fatex-tab-content fatex-tab-content--bio tab" data-tab="bio">

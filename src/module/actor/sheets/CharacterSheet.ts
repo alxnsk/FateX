@@ -101,6 +101,7 @@ export class CharacterSheet extends ActorSheet<CharacterSheetOptions> {
         data.skills = data.items.filter((item: ItemData) => item.type === "skill");
         data.stunts = data.items.filter((item: ItemData) => item.type === "stunt");
         data.extras = data.items.filter((item: ItemData) => item.type === "extra");
+        data.extraThings = data.items.filter((item: ItemData) => item.type === "extraThing");
         data.consequences = data.items.filter((item: ItemData) => item.type === "consequence");
 
         // @ts-ignore

@@ -66,6 +66,18 @@ export interface ExtraItemData {
 
 ///////////////////////////////
 
+interface ExtraThingData {
+    description: string;
+    parentID?: string;
+}
+
+export interface ExtraThingItemData {
+    type: "extraThing";
+    data: ExtraThingData;
+}
+
+///////////////////////////////
+
 interface SkillData {
     rank: number;
 }
@@ -104,6 +116,7 @@ export type FateItemData =
     | TokenReferenceItemData
     | ActorReferenceItemData
     | ExtraItemData
+    | ExtraThingItemData
     | SkillItemData
     | StuntItemData
     | ConsequenceItemData;

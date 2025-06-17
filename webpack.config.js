@@ -43,6 +43,9 @@ module.exports = (env) => {
                 new TerserPlugin({
                     terserOptions: {
                         keep_classnames: true,
+                        //compress: {
+                        //    drop_debugger: false,
+                        //},
                     },
                 }),
             ],

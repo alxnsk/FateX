@@ -140,6 +140,14 @@
                 "ShortDescription": "Short Description",
                 "ShortDescriptionHelp": "Short description for this extra"
             },
+            "ExtraThing": {
+                "Name": "Extra thing title",
+                "EditItem": "Edit ExtraThing",
+                "Description": "Description",
+                "DescriptionHelp": "Long description for this extra thing",
+                "ShortDescription": "Short Description",
+                "ShortDescriptionHelp": "Short description for this extra thing"
+            },
             "Reference": {
                 "EditItem": "Edit Reference",
                 "Name": "Reference name",

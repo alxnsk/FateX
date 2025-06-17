@@ -23,11 +23,10 @@ export class FateItem extends Item {
     }
 
     private isSubitem() {
-        if (this.type === "extra") {
+        if (this.type === "extra" || this.type === "extraThing") {
             // @ts-ignore
             return this.system.parentID !== "";
         }
-
         return false;
     }
 }
